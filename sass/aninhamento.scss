@@ -1,0 +1,31 @@
+// Aninhamento
+#conteudo {
+    background-color: green;
+    padding: 15px;
+    h1 {
+        color: purple;
+    }
+    a {
+        color: red;
+        // Seletor pai -> &
+        &:hover {
+            color: yellow;
+        }
+    }
+}
+
+// variaveis
+$cor-titulo2: pink;
+$bg-color-rodape: black;
+$link-color2: white;
+
+#rodape {
+    background-color: $bg-color-rodape;
+    padding: 15px;
+    h1 {
+        color: $cor-titulo2;
+    }
+    a {
+        color: $link-color2;
+    }
+}
