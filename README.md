@@ -15,8 +15,10 @@ Da forma abaixo, é criado também o arquivo .map, que organiza e mapeia o códi
 ## Convertendo extensões | scss -> css  
 ![alt text](img/image-3.png)
 
-## Monitorando arquivos | Coerção automática
+## Monitorando arquivos e pastas | Coerção automática
 ![alt text](img/image-4.png)  
   
 Arquivo sendo atualizado  
 ![alt text](img/image-5.png)
+  
+![alt text](img/image-6.png)
