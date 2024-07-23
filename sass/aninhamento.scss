@@ -29,3 +29,21 @@ $link-color2: white;
         color: $link-color2;
     }
 }
+
+// Escopos
+// Podemos alterar o valor de variaveis apenas num escopo
+$cor-padrao: gray;
+
+#um {
+    color: $cor-padrao;
+}
+#dois {
+    // escopo da variavel
+    // Utilize !global para ampliar escopo de variavel
+    $cor-padrao: blue !global;
+
+    color: $cor-padrao;
+}
+#tres {
+    color: $cor-padrao;
+}
