@@ -1,0 +1,16 @@
+// for | through - to
+// through -> limite de execução, inclui o ultimo valor -> de 1 a 3 (inclui o 3)
+// to -> limite de execução, não inclui o ultimo valor -> de 1 a 3 (faz de 1 a 2)
+
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        background-color: green;
+        margin-bottom: 2px;
+    }
+}
+
+// while
+
+@while () {
+    
+}
