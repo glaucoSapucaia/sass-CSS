@@ -47,3 +47,16 @@ $cor-padrao: gray;
 #tres {
     color: $cor-padrao;
 }
+
+// Interpolação
+// Recurso para utilizar variaveis com PROPRIEDADES e CLASSES,
+// não apenas para VALORES - use #{}
+
+$classe: red;
+$classe: vermelho;
+
+$color: color;
+
+.#{$classe} {
+    #{$color}: $classe;
+}
