@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAEA,EAAG;EACC,KAAK,EAHH,KAAK",
-"sources": ["../sass/estilo.scss"],
-"names": [],
-"file": "estilo.css"
-}
+{"version":3,"sourceRoot":"","sources":["../sass/estilo.scss"],"names":[],"mappings":"AAEA;EACI,OAHE","file":"estilo.css"}

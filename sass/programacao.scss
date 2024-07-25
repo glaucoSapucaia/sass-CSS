@@ -4,13 +4,14 @@
 
 @for $i from 1 through 3 {
     .item-#{$i} {
-        background-color: green;
+        background-color: gray;
         margin-bottom: 2px;
+        padding: 2px;
     }
 }
 
 // while
 
-@while () {
+// @while () {
     
-}
+// }

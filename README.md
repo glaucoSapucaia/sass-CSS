@@ -4,7 +4,7 @@ Estudos com scss
 ## Tools
 - [sass](https://sass-lang.com/)
 
-## Install sass
+## Install sass | Ruby
 ![alt text](img/image-1.png)
 
 ## Convertendo extensões | sass -> scss  
@@ -22,3 +22,13 @@ Arquivo sendo atualizado
 ![alt text](img/image-5.png)
   
 ![alt text](img/image-6.png)
+
+# Versão Dart
+## Install npm
+![alt text](img/image-7.png)
+
+## Install sass | dart
+![alt text](img/image-8.png)
+
+## Rordando --watch | Localmente
+![alt text](img/image-9.png)
