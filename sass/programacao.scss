@@ -12,6 +12,40 @@
 
 // while
 
-// @while () {
-    
-// }
+$contador: 1;
+@while ($contador <= 5) {
+    .item-#{$contador} {
+        background-color: orange;
+        padding: 10px;
+    }
+    $contador: $contador + 1
+}
+
+// each | Realizando itereções (listas)
+// funciona como um for, podendo obter separadamente os itens de uma lista
+
+$lista: green, yellow, red;
+$contador2: 1;
+
+@each $cor in $lista {
+    .item-#{$contador2} {
+        background-color: $cor;
+        padding: 10px;
+    }
+
+    $contador2: $contador2 + 1;
+}
+
+// funções
+
+// Total colunas da grid
+$total-colunas: 12;
+
+@function largura-coluna($coluna) {
+
+    // retornando divisão da qtd de elementos pelo total da grid
+    // * 100 -> retorno em porcentagem
+    @return ($coluna/$total-colunas * 100);
+}
+
+$resultado: largura-coluna(12);
