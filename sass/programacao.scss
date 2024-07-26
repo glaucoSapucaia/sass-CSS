@@ -45,7 +45,28 @@ $total-colunas: 12;
 
     // retornando divisão da qtd de elementos pelo total da grid
     // * 100 -> retorno em porcentagem
-    @return ($coluna/$total-colunas * 100);
+    // @return ($coluna/$total-colunas * 100);
+
+    // percentage() -> Converte valores para porcentagem
+    @return percentage($coluna/$total-colunas);
+}
+
+@for $i from 1 through $total-colunas {
+    .col-#{$i} {
+        width: largura-coluna($i);
+        background-color: green;
+    }
 }
 
 $resultado: largura-coluna(12);
+
+// mix() -> mistura cores!
+// darken() -> escurece cores!
+// lighten() -> clreia cores!
+
+.alerta {
+    // background: mix(green, orange, 25);
+    // background: darken(green, 0);
+    background: lighten(blue, 30);
+    color: yellow;
+}
