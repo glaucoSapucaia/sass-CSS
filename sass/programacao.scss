@@ -1,3 +1,10 @@
+// Importando files
+// @import '_variaveis.scss';
+
+// Podemos utilizar o nome abreviado para o import!
+@import 'variaveis';
+@import 'mixin';
+
 // for | through - to
 // through -> limite de execução, inclui o ultimo valor -> de 1 a 3 (inclui o 3)
 // to -> limite de execução, não inclui o ultimo valor -> de 1 a 3 (faz de 1 a 2)
@@ -54,7 +61,7 @@ $total-colunas: 12;
 @for $i from 1 through $total-colunas {
     .col-#{$i} {
         width: largura-coluna($i);
-        background-color: green;
+        background-color: $cor-principal;
     }
 }
 
