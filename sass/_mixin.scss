@@ -1,1 +1,99 @@
+// imports
+@import '_variaveis.scss';
+
 // Exemplo de arquivo _mixin =)
+
+// mixin_heranca_controle files
+
+// @mixin -> reaproveitando estruturas de código
+// Pode receber parametros como uma função
+
+@mixin titulo($cor-text: white) {
+    color: $cor-text;
+    background-color: black;
+    padding: 10px 5px;
+}
+
+// @include -> adiciona estrutura @mixin
+
+h1 {
+    // color: white;
+    @include titulo;
+}
+
+h2 {
+    // color: green;
+    @include titulo(green);
+}
+
+// herança | multiplas diretivas
+
+.classe1 {
+    color: red;
+}
+
+.classe2 {
+    background-color: black;
+}
+
+// @extend -> herda de classes pai
+
+.vermelho {
+    @extend .classe1;
+    @extend .classe2;
+}
+
+// encadeando diretivas
+
+// placeholders -> % -> Utilizado para criar um classe, mas não exibi-la no arquivo .css
+// A classe existe apenas para a utilização com herança
+
+%pai {
+    color: red;
+}
+
+%filho {
+    @extend %pai;
+    background-color: black;
+}
+
+.erro {
+    @extend %filho;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+// diretivas de controle | condições
+
+@if($cor-teste == green) {
+    div {
+        background-color: $cor-teste;
+    }
+} @else if($cor-teste == black) {
+    div {
+        color: white;
+        background-color: $cor-teste;
+    }
+} @else {
+    div {
+        background-color: pink;
+    }
+}
+
+// controle + mixin | temas dinamicos para um site
+@mixin tema($tema: padrao) {
+    @if($tema == natal) {
+        background-color: red;
+        color: white
+    } @else if($tema == blackfriday) {
+        background-color: black;
+        color: white;
+    } @else {
+        background-color: white;
+        color: black;
+    }
+}
+
+body {
+    @include tema(blackfriday);
+}
